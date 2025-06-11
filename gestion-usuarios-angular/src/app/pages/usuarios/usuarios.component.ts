@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuariosService, User } from '../../core/usuarios.service';
-import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-usuarios',
   templateUrl: './usuarios.component.html',
-  styleUrls: ['./usuarios.component.css'],
-  standalone: false,
-  imports: [IonicModule]
+  styleUrls: ['./usuarios.component.css']
 })
 export class UsuariosComponent implements OnInit {
   users: User[] = [];

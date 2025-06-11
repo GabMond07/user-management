@@ -1,1 +1,11 @@
-.active { --ion-item-background: #e0e0e0; }
+.active {
+  --ion-item-background: #e0e0e0;
+}
+
+ion-menu {
+  --width: 250px;
+}
+
+.container {
+  padding: 16px;
+}

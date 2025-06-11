@@ -1,26 +1,12 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Gestion Usuarios</ion-title>
-  </ion-toolbar>
-  <ion-toolbar>
-    <ion-buttons>
+    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Menú</ion-title>
+    <ion-title>Gestion Usuarios</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-menu side="start" menuId="main-menu" contentId="main-content">
-  <ion-content>
-    <ion-list>
-      <ion-item routerLink="/pages/home" routerLinkActive="active">Inicio</ion-item>
-      <ion-item routerLink="/pages/perfil" routerLinkActive="active">Perfil</ion-item>
-      <ion-item routerLink="/pages/estructuras" routerLinkActive="active">Estructuras</ion-item>
-      <ion-item routerLink="/pages/documentacion" routerLinkActive="active">Documentación</ion-item>
-      <ion-item routerLink="/pages/usuarios" routerLinkActive="active">Usuarios</ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
-<ion-content id="main-content">
+<ion-content>
   <div class="container mt-4">
     <h1>Bienvenido a Gestion Usuarios</h1>
     <p>Esta es la página principal de la aplicación.</p>

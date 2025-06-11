@@ -9,30 +9,60 @@
 <ion-content>
   <div class="container mt-4">
     <h2>Documentación</h2>
-    <p>Visita la <a href="https://ionicframework.com/docs" target="_blank">documentación oficial de Ionic</a>.</p>
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <p>Visita la <a href="https://ionicframework.com/docs" target="_blank" class="text-primary">documentación oficial de Ionic</a> para más información.</p>
+    <div id="techCarousel" class="carousel slide carousel-fade shadow-lg rounded" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <!-- Imágenes y descripciones -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://via.placeholder.com/800x400?text=NodeJS" class="d-block w-100" alt="NodeJS">
+          <img src="https://nodejs.org/static/images/logo.svg" class="d-block w-100 carousel-img" alt="NodeJS">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white bg-dark bg-opacity-50 p-2 rounded">NodeJS</h5>
+            <p class="text-white bg-dark bg-opacity-50 p-2 rounded">Entorno de ejecución para JavaScript en el servidor.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="https://via.placeholder.com/800x400?text=TypeScript" class="d-block w-100" alt="TypeScript">
+          <img src="https://www.typescriptlang.org/assets/images/logos/typescript-icon-round-512x512.png" class="d-block w-100 carousel-img" alt="TypeScript">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white bg-dark bg-opacity-50 p-2 rounded">TypeScript</h5>
+            <p class="text-white bg-dark bg-opacity-50 p-2 rounded">Superset de JavaScript con tipado estático.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="https://via.placeholder.com/800x400?text=Angular" class="d-block w-100" alt="Angular">
+          <img src="https://angular.io/assets/images/logos/angular/angular.png" class="d-block w-100 carousel-img" alt="Angular">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white bg-dark bg-opacity-50 p-2 rounded">Angular</h5>
+            <p class="text-white bg-dark bg-opacity-50 p-2 rounded">Framework para aplicaciones web dinámicas.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="https://via.placeholder.com/800x400?text=Ionic" class="d-block w-100" alt="Ionic">
+          <img src="https://ionicframework.com/docs/assets/img/ionic-framework-icon.png" class="d-block w-100 carousel-img" alt="Ionic">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white bg-dark bg-opacity-50 p-2 rounded">Ionic</h5>
+            <p class="text-white bg-dark bg-opacity-50 p-2 rounded">Framework para aplicaciones móviles híbridas.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="https://via.placeholder.com/800x400?text=NPM" class="d-block w-100" alt="NPM">
+          <img src="https://www.npmjs.com/static/images/npm-logo.svg" class="d-block w-100 carousel-img" alt="NPM">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white bg-dark bg-opacity-50 p-2 rounded">NPM</h5>
+            <p class="text-white bg-dark bg-opacity-50 p-2 rounded">Gestor de paquetes para JavaScript.</p>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
