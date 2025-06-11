@@ -1,1 +1,50 @@
-<p>estructuras works!</p>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Estructuras</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="container mt-4">
+    <h2>Ejemplos de Directivas</h2>
+    <!-- ngIf -->
+    <div class="card mb-3">
+      <div class="card-body">
+        <h3>ngIf</h3>
+        <p>Muestra contenido si la condición es verdadera.</p>
+        <ion-toggle [(ngModel)]="mostrar" name="mostrar"></ion-toggle>
+        <p *ngIf="mostrar">¡Este texto aparece con ngIf!</p>
+      </div>
+    </div>
+    <!-- ngFor -->
+    <div class="card mb-3">
+      <div class="card-body">
+        <h3>ngFor</h3>
+        <p>Repite elementos en una lista.</p>
+        <ul>
+          <li *ngFor="let item of items">{{ item }}</li>
+        </ul>
+      </div>
+    </div>
+    <!-- ngSwitch -->
+    <div class="card">
+      <div class="card-body">
+        <h3>ngSwitch</h3>
+        <p>Selecciona una opción según el valor.</p>
+        <select [(ngModel)]="opcion" name="opcion">
+          <option value="1">Opción 1</option>
+          <option value="2">Opción 2</option>
+          <option value="3">Opción 3</option>
+        </select>
+        <div [ngSwitch]="opcion">
+          <p *ngSwitchCase="'1'">Has seleccionado la Opción 1</p>
+          <p *ngSwitchCase="'2'">Has seleccionado la Opción 2</p>
+          <p *ngSwitchCase="'3'">Has seleccionado la Opción 3</p>
+          <p *ngSwitchDefault>Selecciona una opción válida</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
