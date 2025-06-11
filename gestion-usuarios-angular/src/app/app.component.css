@@ -1,0 +1,6 @@
+.active {
+  --ion-item-background: #e0e0e0;
+}
+ion-menu {
+  --width: 250px;
+}

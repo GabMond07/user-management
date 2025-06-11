@@ -1,14 +1,37 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
 }
+
 ion-toolbar {
   --background: #007bff;
   --color: white;
 }
+
 .container {
   padding: 16px;
 }
+
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.alert {
+  border-radius: 8px;
+}
+
+a.text-primary {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a.text-primary:hover {
+  text-decoration: underline;
 }
