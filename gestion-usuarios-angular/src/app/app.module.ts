@@ -5,11 +5,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
-<<<<<<< HEAD
   
-=======
-
->>>>>>> 0fd19238fdd28311cd08c747e22165a7555af023
 @NgModule({
   declarations: [AppComponent],
   imports: [
